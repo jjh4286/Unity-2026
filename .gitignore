@@ -5,6 +5,9 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
+/[Aa]ssets/90.Downloads/
+/[Ee]xe/
 .vs/
+*.log
 *.csproj
 *.sln

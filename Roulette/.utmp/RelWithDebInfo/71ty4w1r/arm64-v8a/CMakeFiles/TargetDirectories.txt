@@ -1,0 +1,8 @@
+/Users/jiho/GitHub/Roulette/.utmp/RelWithDebInfo/71ty4w1r/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/jiho/GitHub/Roulette/.utmp/RelWithDebInfo/71ty4w1r/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/jiho/GitHub/Roulette/.utmp/RelWithDebInfo/71ty4w1r/arm64-v8a/GameActivity/CMakeFiles/game.dir
+/Users/jiho/GitHub/Roulette/.utmp/RelWithDebInfo/71ty4w1r/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+/Users/jiho/GitHub/Roulette/.utmp/RelWithDebInfo/71ty4w1r/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+/Users/jiho/GitHub/Roulette/.utmp/RelWithDebInfo/71ty4w1r/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+/Users/jiho/GitHub/Roulette/.utmp/RelWithDebInfo/71ty4w1r/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+/Users/jiho/GitHub/Roulette/.utmp/RelWithDebInfo/71ty4w1r/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

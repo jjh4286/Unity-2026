@@ -2,21 +2,23 @@ using UnityEngine;
 
 public class RouletteController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float startSpeed = 30f;
+    public float decreaseRatio = 0.99f;
     float rotSpeed = 0;
+
     void Start()
     {
         Application.targetFrameRate = 60;
 
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            this.rotSpeed = 10;
+            rotSpeed = startSpeed;
         }
+        transform.Rotate(0, 0, rotSpeed);
+
+        rotSpeed *= decreaseRatio;
     }
-    transform.Rotate(0, 0, this.rotSpeed);
 }
