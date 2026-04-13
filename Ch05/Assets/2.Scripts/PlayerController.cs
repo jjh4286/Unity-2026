@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
+    /*
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -18,6 +19,21 @@ public class PlayerController : MonoBehaviour
             transform.Translate(-speed, 0, 0);
         }
 
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.Translate(speed, 0, 0);
+        }
+    }
+    */
+    public void LButtonDown()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.Translate(-speed, 0, 0);
+        }
+    }
+    public void RbuttonDown()
+    {
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             transform.Translate(speed, 0, 0);
