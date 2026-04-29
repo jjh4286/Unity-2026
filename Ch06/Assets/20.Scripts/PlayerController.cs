@@ -60,8 +60,7 @@ public class PlayerController : MonoBehaviour
         //     }
         // }
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider2D other)
     {
         Debug.Log("Gool");
         SceneManager.LoadScene("ClearScene");
