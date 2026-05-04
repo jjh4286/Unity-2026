@@ -1,21 +1,20 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class BamsongiController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public void Shoot(Vector3 dir)
+    {
+        GetComponent<Rigidbody>().AddForce(dir);
+    }
+    
     void Start()
     {
         Application.targetFrameRate = 60;
         Shoot(new Vector3(0, 200, 2000));
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnOllisionEnter(Collision collision)
     {
-        
-    }
-    public void Shoot(Vector3 dir)
-    {
-        GetComponent<Rigidbody>().AddForce(dir);
+        GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<ParticleSystem>().Play();
     }
 }
