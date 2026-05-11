@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BamsongiController : MonoBehaviour
 {
-    public MeshRenderer renderer;
+    public MeshRenderer meshRenderer;
     public void Shoot(Vector3 dir)
     {
         GetComponent<Rigidbody>().AddForce(dir);
@@ -15,7 +15,7 @@ public class BamsongiController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        renderer.enabled(false);
+        GetComponent<Renderer>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         GetComponent<ParticleSystem>().Play();
         Destroy(gameObject, 0.5f);
