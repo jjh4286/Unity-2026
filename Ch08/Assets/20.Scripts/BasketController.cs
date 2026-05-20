@@ -6,12 +6,14 @@ public class BasketController : MonoBehaviour
 {
     public AudioClip appleSE;
     public AudioClip bombSE;
+    GameObject director;
     AudioSource aud;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Application.targetFrameRate=60;
         aud = GetComponent<AudioSource>();
+        director = GameObject.Find("GameDirector");
     }
 
     // Update is called once per frame
@@ -36,11 +38,13 @@ public class BasketController : MonoBehaviour
         {
             Debug.Log("사과를 잡았다");
             aud.PlayOneShot(appleSE);
+            director.GetComponent<GameDirector>().GetApple();
         }
         else if(other.gameObject.tag == "Bomb")
         {
             Debug.Log("Catched");
             aud.PlayOneShot(bombSE);
+            director.GetComponent<GameDirector>().GetBomb();
         }
         
         Destroy(other.gameObject);
