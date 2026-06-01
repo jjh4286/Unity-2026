@@ -1017,13 +1017,39 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e17c54ac569df4ea58c43d0791fc96a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1017282049}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e17c54ac569df4ea58c43d0791fc96a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1373354018}
   m_SourcePrefab: {fileID: 100100000, guid: e17c54ac569df4ea58c43d0791fc96a1, type: 3}
 --- !u!4 &1373354016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e17c54ac569df4ea58c43d0791fc96a1, type: 3}
   m_PrefabInstance: {fileID: 1373354015}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1373354017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e17c54ac569df4ea58c43d0791fc96a1, type: 3}
+  m_PrefabInstance: {fileID: 1373354015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1373354018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373354017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2c778293def48618f503193af9c947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  movespeed: 2
+  rotateSpeed: 50
+  shootingForce: 400
+  shootingDelay: 1.5
+  bamsongiprefab: {fileID: 0}
+  shootingPoint: {fileID: 0}
 --- !u!1 &1615667171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,6 +1112,7 @@ GameObject:
   - component: {fileID: 2085228190}
   - component: {fileID: 2085228191}
   - component: {fileID: 2085228192}
+  - component: {fileID: 2085228193}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1187,6 +1214,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 10
   rotationSpeed: 1
+--- !u!114 &2085228193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085228186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2c778293def48618f503193af9c947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  movespeed: 2
+  rotateSpeed: 20
+  shootingForce: 100
+  shootingDelay: 1.5
+  bamsongiprefab: {fileID: 0}
+  shootingPoint: {fileID: 0}
 --- !u!1 &2110674689
 GameObject:
   m_ObjectHideFlags: 0
